@@ -50,7 +50,6 @@ export default function App() {
   
       setWeather(weatherData);
   
-      // Guardar el historial en MongoDB
       const response = await fetch('http://localhost:5000/api/history', {
         method: 'POST',
         headers: {
